@@ -1,0 +1,29 @@
+{
+  "name": "pec1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently -c --kill-others 'npm:watch-html' 'npm:watch-reason'",
+    "build": "parcel build index.html --public-url /",
+    "clean": "rimraf .cache lib dist .merlin src/*.js",
+    "watch-html": "parcel index.html",
+    "watch-reason": "bsb -make-world -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "babel-loader": "^8.0.5",
+    "bs-platform": "^5.0.3",
+    "bsb-js": "^1.1.7",
+    "concurrently": "^4.1.0",
+    "cssnano": "^4.1.10"
+  },
+  "dependencies": {
+    "bs-css": "^8.0.3",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "reason-react": "^0.7.0"
+  }
+}
