@@ -17,7 +17,9 @@ let make =
     articles
     |> List.map(({title, slug, content}: Entities.Article.t) =>
          <Component_Article title key=title>
-           <p> {s(Js.String.slice(~from=0, ~to_=400, content) ++ "...")} </p>
+           <Component_Markdown>
+             {Js.String.slice(~from=0, ~to_=400, content) ++ "..."}
+           </Component_Markdown>
            <Component_Button
              className=Styles.readMoreBtn
              label="Read more"

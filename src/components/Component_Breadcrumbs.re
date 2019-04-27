@@ -29,7 +29,7 @@ let make = (~breadcrumbs: list(Breadcrumb.t)=[]) => {
       {
         links
         |> List.map(({path, text}: Breadcrumb.t) =>
-             <li className=Styles.item>
+             <li key=path className=Styles.item>
                <Component_Link href=path> {s(text)} </Component_Link>
              </li>
            )

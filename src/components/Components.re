@@ -7,3 +7,4 @@ module Bradcrumbs = Component_Breadcrumbs;
 module Page = Component_Page;
 module ArticleListPage = Component_ArticleListPage;
 module ArticleDetailPage = Component_ArticleDetailPage;
+module Markdown = Component_Markdown;
