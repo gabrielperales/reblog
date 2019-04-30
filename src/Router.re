@@ -16,11 +16,11 @@ let make = () => {
 
     let breadcrumbs: list(Breadcrumb.t) =
       switch (slug) {
-      | x when Article.existsBySlug(slug, Article.bundlers) => [
-          {path: "module-bundlers", text: "Bundlers"},
+      | x when Article.existsBySlug(x, Article.bundlers) => [
+          {path: "/module-bundlers", text: "Bundlers"},
         ]
-      | x when Article.existsBySlug(slug, Article.languages) => [
-          {path: "frontend-languages", text: "Languages"},
+      | x when Article.existsBySlug(x, Article.languages) => [
+          {path: "/frontend-languages", text: "Languages"},
         ]
       | _ => []
       };

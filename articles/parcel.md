@@ -2,20 +2,68 @@
 title: Parcel
 slug: parcel
 category: bundlers
-image: "imgs/parcel.png"
 ---
 
-TypeScript is an open-source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript, and adds optional static typing to the language.
+🚀 Blazing fast bundle times
+Parcel uses worker processes to enable multicore compilation, and has a filesystem cache for fast rebuilds even after a restart.
 
-TypeScript is designed for development of large applications and transcompiles to JavaScript. As TypeScript is a superset of JavaScript, existing JavaScript programs are also valid TypeScript programs. TypeScript may be used to develop JavaScript applications for both client-side and server-side (Node.js) execution.
+📦 Bundle all your assets
+Parcel has out of the box support for JS, CSS, HTML, file assets, and more - no plugins needed.
 
-There are multiple options available for transcompilation. Either the default TypeScript Checker can be used, or the Babel compiler can be invoked to convert TypeScript to JavaScript.
+🐠 Automatic transforms
+Code is automatically transformed using Babel, PostCSS, and PostHTML when needed - even node_modules.
 
-TypeScript supports definition files that can contain type information of existing JavaScript libraries, much like C++ header files can describe the structure of existing object files. This enables other programs to use the values defined in the files as if they were statically typed TypeScript entities. There are third-party header files for popular libraries such as jQuery, MongoDB, and D3.js. TypeScript headers for the Node.js basic modules are also available, allowing development of Node.js programs within TypeScript.
+✂️ Zero config code splitting
+Using the dynamic import() syntax, Parcel splits your output bundles so you only load what is needed on initial load.
 
-The TypeScript compiler is itself written in TypeScript and compiled to JavaScript. It is licensed under the Apache 2.0 License.
+🔥 Hot module replacement
+Parcel automatically updates modules in the browser as you make changes during development, no configuration needed.
 
-TypeScript is included as a first-class programming language in Microsoft Visual Studio 2013 Update 2 and later, beside C# and other Microsoft languages. An official extension allows Visual Studio 2012 to support TypeScript as well.
+🚨 Friendly error logging
+Parcel prints syntax highlighted code frames when it encounters errors to help you pinpoint the problem.
 
-Anders Hejlsberg, lead architect of C# and creator of Delphi and Turbo Pascal, has worked on the development of TypeScript
+Hello World
+Start with the entry HTML file for your application. Parcel follows the dependencies from there to build your whole app.
 
+✏️ index.html
+
+```html
+<html>
+<body>
+	<script src="./index.js"></script>
+</body>
+</html>
+```
+
+🛠 index.js
+
+```javascript
+
+// import another component
+import main from './main';
+
+main();
+```
+
+🛠 main.js
+
+```javascript
+// import a CSS module
+import classes from './main.css';
+
+export default () => {
+	console.log(classes.main);
+};
+```
+
+💅 main.css
+
+```css
+.main {
+  /* Reference an image file */
+  background: url('./images/background.png');
+  color: red;
+}
+```
+          
+Run parcel index.html to start a dev server. Importing JavaScript, CSS, images, and more just works! 👌

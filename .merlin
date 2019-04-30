@@ -1,8 +1,7 @@
 ####{BSB GENERATED: NO EDIT
 B lib/bs
 FLG -open Pec1
-FLG -ppx '/Users/gabrielperales/UOC/HerramientasHTMLyCSS/PEC1/node_modules/bs-platform/lib/reactjs_jsx_ppx_3.exe'
-FLG -ppx /Users/gabrielperales/UOC/HerramientasHTMLyCSS/PEC1/node_modules/bs-platform/lib/bsppx.exe
+FLG -ppx '/Users/gabrielperales/UOC/HerramientasHTMLyCSS/PEC1/node_modules/bs-platform/lib/bsppx.exe -bs-jsx 3'
 S /Users/gabrielperales/UOC/HerramientasHTMLyCSS/PEC1/node_modules/bs-platform/lib/ocaml
 B /Users/gabrielperales/UOC/HerramientasHTMLyCSS/PEC1/node_modules/bs-platform/lib/ocaml
 FLG -nostdlib -color always

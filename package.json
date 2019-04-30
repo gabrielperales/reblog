@@ -1,5 +1,5 @@
 {
-  "name": "pec1",
+  "name": "reblog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -21,7 +21,8 @@
     "concurrently": "^4.1.0",
     "cssnano": "^4.1.10",
     "parcel-bundler": "^1.12.3",
-    "parcel-plugin-md-fm": "^0.3.0"
+    "parcel-plugin-md-fm": "^0.3.0",
+    "parcel-plugin-prerender": "https://github.com/gabrielperales/parcel-plugin-prerender.git#feature/follow-internal-links"
   },
   "dependencies": {
     "@glennsl/bs-json": "^3.0.0",

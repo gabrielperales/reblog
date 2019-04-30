@@ -1,0 +1,6 @@
+{
+  "crawl": true,
+  "routes":[
+    "/"
+  ]
+}

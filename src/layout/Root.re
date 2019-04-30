@@ -110,7 +110,7 @@ let make = () =>
         <Button
           className=Styles.readMoreBtn
           label="Read More"
-          onClick={Utils.goTo("module-bundlers")}
+          href="/module-bundlers"
         />
       </Article>
       <Article title="Frontend languages">
@@ -143,7 +143,7 @@ let make = () =>
         </p>
         <Button
           className=Styles.readMoreBtn
-          onClick={Utils.goTo("frontend-languages")}
+          href="/frontend-languages"
           label="Read More"
         />
       </Article>

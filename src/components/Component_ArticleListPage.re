@@ -23,7 +23,7 @@ let make =
            <Component_Button
              className=Styles.readMoreBtn
              label="Read more"
-             onClick={Utils.goTo(slug)}
+             href={"/" ++ slug}
            />
          </Component_Article>
        )
