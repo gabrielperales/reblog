@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postbuild": "react-snap",
     "start": "concurrently -c --kill-others 'npm:watch-html' 'npm:watch-reason'",
     "build": "parcel build index.html --public-url /",
     "clean": "rimraf .cache lib dist .merlin src/*.js",
@@ -22,7 +23,7 @@
     "cssnano": "^4.1.10",
     "parcel-bundler": "^1.12.3",
     "parcel-plugin-md-fm": "^0.3.0",
-    "parcel-plugin-prerender": "https://github.com/gabrielperales/parcel-plugin-prerender.git#feature/follow-internal-links"
+    "react-snap": "^1.23.0"
   },
   "dependencies": {
     "@glennsl/bs-json": "^3.0.0",
@@ -31,6 +32,15 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-highlight": "^0.12.0",
-    "reason-react": "^0.7.0"
+    "reason-react": "^0.7.0",
+    "svgo": "^1.2.2"
+  },
+  "reactSnap": {
+    "source": "dist",
+    "inlineCss": true,
+    "minifyHtml": {
+      "collapseWhitespace": false,
+      "removeComments": false
+    }
   }
 }
