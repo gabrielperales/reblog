@@ -5,11 +5,12 @@ Won't be cool to have a static blog written in ReasonML? So this is a proof of c
 ## Things to improve
 
 - [x] Add syntax highlight for code blocks inside posts
+- [x] Prerender css
 - [ ] Navbar/navigation menu
 - [ ] Add a way to add custom pages (about, concat, ect...)
 - [ ] Pagination
 - [ ] Show latest post on index
-- [ ] Prerender css?
+- [ ] Progressive image loading / automate thumbnail creation?
 
 ## Install dependencies
 
