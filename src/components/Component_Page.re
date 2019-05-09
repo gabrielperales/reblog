@@ -31,13 +31,16 @@ let s = React.string;
 [@react.component]
 let make = (~title, ~image="", ~breadcrumbs=[], ~children=ReasonReact.null) =>
   <div>
+    <BsReactHelmet defaultTitle="Learning ReasonML">
+      <title> {s("Learning ReasonML | " ++ title)} </title>
+    </BsReactHelmet>
     <Component_Navbar>
       <Component_Breadcrumbs breadcrumbs />
     </Component_Navbar>
     <div className=Styles.content>
       {
         if (image != "") {
-          <img className=Styles.image src=image />;
+          <Component_Image className=Styles.image alt="" src=image />;
         } else {
           ReasonReact.null;
         }

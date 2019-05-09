@@ -14,7 +14,7 @@ let make = () => {
     let {title, image, content}: Article.t =
       Article.findBySlug(slug, articles);
 
-    let breadcrumbs: list(Breadcrumb.t) =
+    let breadcrumbs: list(Link.t) =
       switch (slug) {
       | x when Article.existsBySlug(x, Article.bundlers) => [
           {path: "/module-bundlers", text: "Bundlers"},

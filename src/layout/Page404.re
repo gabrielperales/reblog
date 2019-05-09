@@ -7,4 +7,4 @@ let image: string = [%bs.raw
 let s = React.string;
 
 [@react.component]
-let make = () => <Page title="Not Found" image />;
+let make = () => <Page title="Error 404: Not Found" image />;

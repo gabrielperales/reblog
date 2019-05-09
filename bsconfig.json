@@ -13,8 +13,11 @@
   },
   "suffix": ".bs.js",
   "bs-dependencies": [
+    "bs-webapi",
     "reason-react",
+    "bs-dynamic-import",
     "@glennsl/bs-json",
+    "@moox/bs-react-helmet",
     "bs-css"
   ],
   "warnings": {

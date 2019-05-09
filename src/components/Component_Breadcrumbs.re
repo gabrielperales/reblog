@@ -19,8 +19,8 @@ module Styles = {
 let s = React.string;
 
 [@react.component]
-let make = (~breadcrumbs: list(Breadcrumb.t)=[]) => {
-  let home: Breadcrumb.t = {path: "/", text: "Home"};
+let make = (~breadcrumbs: list(Link.t)=[]) => {
+  let home: Link.t = {path: "/", text: "Home"};
 
   let links = List.append([home], breadcrumbs);
 
@@ -28,7 +28,7 @@ let make = (~breadcrumbs: list(Breadcrumb.t)=[]) => {
     <ul className=Styles.nav>
       {
         links
-        |> List.map(({path, text}: Breadcrumb.t) =>
+        |> List.map(({path, text}: Link.t) =>
              <li key=path className=Styles.item>
                <Component_Link href=path> {s(text)} </Component_Link>
              </li>

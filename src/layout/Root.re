@@ -73,6 +73,7 @@ let s = React.string;
 [@react.component]
 let make = () =>
   <div>
+    <BsReactHelmet defaultTitle="Learning ReasonML" />
     <div className=Styles.root>
       <div className=Styles.hero>
         <div className=Styles.uoc> {s("UOC")} </div>
@@ -81,7 +82,11 @@ let make = () =>
     </div>
     <div className=Styles.wrapper>
       <Article title="Module Bundlers">
-        <img className=Styles.ilustration src=imgBundle />
+        <img
+          alt="ilustration of a girl and a document tree"
+          className=Styles.ilustration
+          src=imgBundle
+        />
         <p>
           {
             s(
@@ -114,7 +119,11 @@ let make = () =>
         />
       </Article>
       <Article title="Frontend languages">
-        <img className=Styles.ilustration src=imgLanguages />
+        <img
+          alt="ilustration of people with coding symbols"
+          className=Styles.ilustration
+          src=imgLanguages
+        />
         <p>
           {
             s(

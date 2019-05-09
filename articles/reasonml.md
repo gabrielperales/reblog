@@ -2,6 +2,7 @@
 title: ReasonML
 slug: reasonml
 category: languages
+date: May 6, 2019
 ---
 
 Types without hassle

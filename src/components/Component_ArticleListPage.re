@@ -15,8 +15,8 @@ let make =
     ) => {
   let articles =
     articles
-    |> List.map(({title, slug, content}: Entities.Article.t) =>
-         <Component_Article title key=title>
+    |> List.map(({title, date, slug, content}: Entities.Article.t) =>
+         <Component_Article title date key=title>
            <Component_Markdown>
              {Js.String.slice(~from=0, ~to_=400, content) ++ "..."}
            </Component_Markdown>

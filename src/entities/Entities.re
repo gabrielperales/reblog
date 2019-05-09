@@ -1,2 +1,2 @@
 module Article = Entities_Article;
-module Breadcrumb = Entities_Breadcrumb;
+module Link = Entities_Link;

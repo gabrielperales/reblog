@@ -2,6 +2,7 @@
 title: Parcel
 slug: parcel
 category: bundlers
+date: May 6, 2019
 ---
 
 🚀 Blazing fast bundle times
