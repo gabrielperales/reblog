@@ -9,4 +9,11 @@ let s = React.string;
 let articles = Entities.Article.languages;
 
 [@react.component]
-let make = () => <ArticleListPage title="Frontend languages" image articles />;
+let make = (~breadcrumbs=[], ~navLinks) =>
+  <ArticleListPage
+    title="Frontend languages"
+    breadcrumbs
+    navLinks
+    image
+    articles
+  />;

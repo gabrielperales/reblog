@@ -7,4 +7,11 @@ let image: string = [%bs.raw
 let articles = Entities.Article.bundlers;
 
 [@react.component]
-let make = () => <ArticleListPage title="Module Bundlers" image articles />;
+let make = (~breadcrumbs=[], ~navLinks=[]) =>
+  <ArticleListPage
+    title="Module Bundlers"
+    breadcrumbs
+    navLinks
+    image
+    articles
+  />;

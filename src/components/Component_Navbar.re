@@ -1,18 +1,22 @@
 module Styles = {
   open Css;
 
-  let header =
+  let navbar =
     style([
       alignItems(center),
       backgroundColor(white),
       display(`flex),
       flexShrink(0),
-      height(Theme.navbarHeight),
       margin(`zero),
       marginLeft(auto),
       marginRight(auto),
       width(`percent(100.0)),
       position(`fixed),
+      zIndex(99999),
+      media(
+        "(min-width: " ++ Theme.tablet ++ " )",
+        [height(Theme.navbarHeight)],
+      ),
     ]);
 
   let innerContainer =
@@ -31,6 +35,6 @@ let s = React.string;
 
 [@react.component]
 let make = (~children) =>
-  <div className=Styles.header>
-    <div className=Styles.innerContainer> <div> children </div> </div>
-  </div>;
+  <header className=Styles.navbar>
+    <div className=Styles.innerContainer> children </div>
+  </header>;

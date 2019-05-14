@@ -5,6 +5,11 @@ category: languages
 date: May 6, 2019
 ---
 
+<img 
+  src="articles/imgs/reason.svg" 
+  alt="ReasonML logo (a package) and the text Reason"
+/>
+
 Types without hassle
 
 Powerful, safe type inference means you rarely have to annotate types, but everything gets checked for you.

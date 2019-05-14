@@ -29,23 +29,39 @@ module Styles = {
 let s = React.string;
 
 [@react.component]
-let make = (~title, ~image="", ~breadcrumbs=[], ~children=ReasonReact.null) =>
+let make =
+    (
+      ~title="",
+      ~image="",
+      ~breadcrumbs=[],
+      ~navLinks=[],
+      ~children=React.null,
+    ) =>
   <div>
     <BsReactHelmet defaultTitle="Learning ReasonML">
-      <title> {s("Learning ReasonML | " ++ title)} </title>
+      {
+        String.length(title) > 0 ?
+          <title> {s("Learning ReasonML | " ++ title)} </title> : React.null
+      }
     </BsReactHelmet>
-    <Component_Navbar>
-      <Component_Breadcrumbs breadcrumbs />
-    </Component_Navbar>
+    <Component_Navbar> <Component_Menu links=navLinks /> </Component_Navbar>
     <div className=Styles.content>
       {
         if (image != "") {
-          <Component_Image className=Styles.image alt="" src=image />;
+          <Component_Image
+            className=Styles.image
+            alt={"featured image/ilustration of " ++ title}
+            src=image
+          />;
         } else {
-          ReasonReact.null;
+          React.null;
         }
       }
-      <h1 className=Styles.title> {s(title)} </h1>
+      <Component_Breadcrumbs breadcrumbs />
+      {
+        String.length(title) > 0 ?
+          <h1 className=Styles.title> {s(title)} </h1> : React.null
+      }
       <div> children </div>
     </div>
     <Component_Footer />

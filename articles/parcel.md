@@ -5,6 +5,16 @@ category: bundlers
 date: May 6, 2019
 ---
 
+<picture>
+  <source srcset="articles/imgs/parcel_box.jpg 1x, articles/imgs/parcel_box.1.5x.jpg 1.5x, articles/imgs/parcel_box.2x.jpg 2x"
+          media="(max-width: 480px)">
+  <img 
+    src="articles/imgs/parcel.png" 
+    srcset="articles/imgs/parcel.png, articles/imgs/parcel.1.5x.png 1.5x, articles/imgs/parcel.2x.png 2x" 
+    alt="Parceljs logo (a package) and the text Parceljs"
+  />
+</picture>
+
 🚀 Blazing fast bundle times
 Parcel uses worker processes to enable multicore compilation, and has a filesystem cache for fast rebuilds even after a restart.
 

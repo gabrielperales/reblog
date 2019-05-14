@@ -6,7 +6,7 @@
   "scripts": {
     "postbuild": "react-snap",
     "start": "concurrently -c --kill-others 'npm:watch-html' 'npm:watch-reason'",
-    "build": "parcel build index.html --public-url /",
+    "build": "parcel build articles/imgs/* index.html --public-url /",
     "clean": "rimraf .cache lib dist .merlin src/*.js",
     "watch-html": "parcel index.html",
     "watch-reason": "bsb -make-world -w"
