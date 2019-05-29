@@ -19,13 +19,14 @@ module Styles = {
       alignItems(center),
       display(`flex),
       fontFamily(Theme.primaryFontFamily),
-      fontSize(px(40)),
+      fontSize(px(30)),
       height(pct(100.0)),
       justifyContent(center),
       marginLeft(auto),
       marginRight(auto),
       maxWidth(Theme.maxWidth),
       width(pct(100.0)),
+      media("(min-width: " ++ Theme.tablet ++ " )", [fontSize(px(40))]),
     ]);
 
   let title =
