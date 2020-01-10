@@ -1,23 +1,25 @@
 ####{BSB GENERATED: NO EDIT
 B lib/bs
 FLG -open Pec1
-FLG -ppx '/Users/gabrielperales/UOC/HerramientasHTMLyCSS/PEC1/node_modules/bs-platform/lib/bsppx.exe -bs-jsx 3'
-S /Users/gabrielperales/UOC/HerramientasHTMLyCSS/PEC1/node_modules/bs-platform/lib/ocaml
-B /Users/gabrielperales/UOC/HerramientasHTMLyCSS/PEC1/node_modules/bs-platform/lib/ocaml
-FLG -nostdlib -color always
+FLG -ppx '/Users/gabrielperales/workspace/reblog/node_modules/bs-platform/lib/bsppx.exe -bs-jsx 3'
+S /Users/gabrielperales/workspace/reblog/node_modules/bs-platform/lib/ocaml
+B /Users/gabrielperales/workspace/reblog/node_modules/bs-platform/lib/ocaml
+FLG -nostdlib
 FLG -w -30-40+6+7+27+32..39+44+45+101
-S /Users/gabrielperales/UOC/HerramientasHTMLyCSS/PEC1/node_modules/bs-webapi/lib/ocaml
-B /Users/gabrielperales/UOC/HerramientasHTMLyCSS/PEC1/node_modules/bs-webapi/lib/ocaml
-S /Users/gabrielperales/UOC/HerramientasHTMLyCSS/PEC1/node_modules/reason-react/lib/ocaml
-B /Users/gabrielperales/UOC/HerramientasHTMLyCSS/PEC1/node_modules/reason-react/lib/ocaml
-S /Users/gabrielperales/UOC/HerramientasHTMLyCSS/PEC1/node_modules/bs-dynamic-import/lib/ocaml
-B /Users/gabrielperales/UOC/HerramientasHTMLyCSS/PEC1/node_modules/bs-dynamic-import/lib/ocaml
-S /Users/gabrielperales/UOC/HerramientasHTMLyCSS/PEC1/node_modules/@glennsl/bs-json/lib/ocaml
-B /Users/gabrielperales/UOC/HerramientasHTMLyCSS/PEC1/node_modules/@glennsl/bs-json/lib/ocaml
-S /Users/gabrielperales/UOC/HerramientasHTMLyCSS/PEC1/node_modules/@moox/bs-react-helmet/lib/ocaml
-B /Users/gabrielperales/UOC/HerramientasHTMLyCSS/PEC1/node_modules/@moox/bs-react-helmet/lib/ocaml
-S /Users/gabrielperales/UOC/HerramientasHTMLyCSS/PEC1/node_modules/bs-css/lib/ocaml
-B /Users/gabrielperales/UOC/HerramientasHTMLyCSS/PEC1/node_modules/bs-css/lib/ocaml
+S /Users/gabrielperales/workspace/reblog/node_modules/bs-webapi/lib/ocaml
+B /Users/gabrielperales/workspace/reblog/node_modules/bs-webapi/lib/ocaml
+S /Users/gabrielperales/workspace/reblog/node_modules/reason-react/lib/ocaml
+B /Users/gabrielperales/workspace/reblog/node_modules/reason-react/lib/ocaml
+S /Users/gabrielperales/workspace/reblog/node_modules/bs-dynamic-import/lib/ocaml
+B /Users/gabrielperales/workspace/reblog/node_modules/bs-dynamic-import/lib/ocaml
+S /Users/gabrielperales/workspace/reblog/node_modules/@glennsl/bs-json/lib/ocaml
+B /Users/gabrielperales/workspace/reblog/node_modules/@glennsl/bs-json/lib/ocaml
+S /Users/gabrielperales/workspace/reblog/node_modules/@moox/bs-react-helmet/lib/ocaml
+B /Users/gabrielperales/workspace/reblog/node_modules/@moox/bs-react-helmet/lib/ocaml
+S /Users/gabrielperales/workspace/reblog/node_modules/bs-css/lib/ocaml
+B /Users/gabrielperales/workspace/reblog/node_modules/bs-css/lib/ocaml
+S /Users/gabrielperales/workspace/reblog/node_modules/reason-loadable/lib/ocaml
+B /Users/gabrielperales/workspace/reblog/node_modules/reason-loadable/lib/ocaml
 S src
 B lib/bs/src
 S src/entities

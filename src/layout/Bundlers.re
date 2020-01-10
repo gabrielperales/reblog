@@ -15,3 +15,5 @@ let make = (~breadcrumbs=[], ~navLinks=[]) =>
     image
     articles
   />;
+
+let default = make;
