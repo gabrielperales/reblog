@@ -18,7 +18,8 @@
     "bs-dynamic-import",
     "@glennsl/bs-json",
     "@moox/bs-react-helmet",
-    "bs-css"
+    "bs-css",
+    "reason-loadable"
   ],
   "warnings": {
     "error": "+101"

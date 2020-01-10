@@ -14,8 +14,14 @@ let make = () => {
   ];
 
   switch (url.path) {
-  | ["module-bundlers"] => <Bundlers breadcrumbs navLinks />
-  | ["frontend-languages"] => <Languages breadcrumbs navLinks />
+  | ["module-bundlers"] => 
+      <React.Suspense fallback={<div> (ReasonReact.string("Loading...")) </div>}>
+        <LazyBundlers.Lazy breadcrumbs navLinks />
+      </React.Suspense>
+  | ["frontend-languages"] => 
+      <React.Suspense fallback={<div> (ReasonReact.string("Loading...")) </div>}>
+        <LazyLanguages.Lazy breadcrumbs navLinks />
+      </React.Suspense>
   | [slug] when Article.existsBySlug(slug, articles) =>
     let {title, image, content}: Article.t =
       Article.findBySlug(slug, articles);
@@ -34,7 +40,13 @@ let make = () => {
       };
 
     <ArticleDetailPage title image content breadcrumbs navLinks />;
-  | [] => <Root navLinks />
-  | _ => <Page404 />
+  | [] => 
+    <React.Suspense fallback={<div> (ReasonReact.string("Loading...")) </div>}>
+      <LazyRootPage.Lazy navLinks />
+    </React.Suspense>
+  | _ => 
+    <React.Suspense fallback={<div> (ReasonReact.string("Loading...")) </div>}>
+      <LazyPage404.Lazy />
+    </React.Suspense>
   };
 };

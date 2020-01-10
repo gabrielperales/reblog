@@ -154,3 +154,5 @@ let make = (~navLinks) =>
       </FadeInUpOnScreen>
     </div>
   </Page>;
+
+let default = make;
